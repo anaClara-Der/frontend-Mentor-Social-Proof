@@ -1,0 +1,163 @@
+:root{
+    --veryDarkMagenta:hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    background-image: url(./images/bg-pattern-bottom-mobile.svg), url(./images/bg-pattern-top-mobile.svg);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+/*General*/
+#container{
+    margin: 40px 15px;  
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+}
+/*Título primer párrafo*/
+.box-titulo{
+    margin-bottom: 40px;
+}
+h1{
+    color: var(--veryDarkMagenta);
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box-titulo > p{
+    text-align: center; 
+    color: var(--darkGrayishMagenta)
+}
+/*Tarjetas con estrellas*/
+.puntuaciones{
+    margin-bottom: 40px;
+}
+.box-puntuaciones{
+    background-color: var(--lightGrayishMagenta);
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 10px;
+    height: 70px;
+    text-align: center;
+    line-height: 25px;
+}
+.box-puntuaciones > p{
+    font-size: 15px;
+    color: var(--veryDarkMagenta);
+    font-weight: bold;
+}
+/*Tarjetas personas*/
+.tarjeta{
+    height: 260px;
+    background-color: var(--veryDarkMagenta);
+    margin: 15px 0px;
+    padding: 25px;
+    border-radius: 5px;
+    color: var(--white); 
+}
+h2{
+    font-size: 15px; 
+}
+span{
+   font-size:15px ; 
+   color: var(--softPink);
+}
+.tarjetas-imagen{
+    margin-bottom: 30px;
+    display: flex;
+}
+.tarjeta img{
+    border-radius: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+.tarjetas-imagen-nombre h2{
+    margin: 5px 0px;
+}
+.tareta-texto{
+    margin: auto 0px;
+}
+/*Footer*/
+.attribution{
+    text-align: center;
+    color: var(--darkGrayishMagenta);
+}
+
+
+@media (min-width:1224px){
+    body{
+        background-image: url(./images/bg-pattern-bottom-desktop.svg), url(./images/bg-pattern-top-desktop.svg);
+    }
+   #container{
+       width: 80%;
+       margin: 30px auto;
+   }
+   /*Parte superior*/
+   #primera-parte{
+       display: flex;
+       justify-content: space-between;
+   }
+   .box-titulo{
+       width: 45%;
+    margin-bottom: 20px;
+   }
+   h1{
+       text-align: left;
+       padding-right: 100px;
+   }
+   .box-titulo > p{
+       text-align: left;
+   }
+   /*puntuaciones*/
+   .puntuaciones{
+       width: 50%;
+       margin-bottom: 20px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-end;
+   }
+   .box-puntuaciones{
+       width: 400px;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       
+   }
+   .putuaciones-imagenes{
+       margin: 0px 20px;
+   }
+   .puntuaciones-uno{
+       margin-right: 100px;
+   }
+   .puntuaciones-dos{
+       margin-right: 50px;
+   }
+  
+ /*Tarjetas personas*/
+ #tarjetas{  
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .tarjeta{
+    width: 350px; 
+ }
+.tarjeta-medio{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+}
+.tarjeta-final{
+    margin-top: 70px;
+}
+ 
+}
